@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "node-sass": "^4.1.1",
+    "sass-loader": "^4.1.1",
     "vue": "^2.1.0",
     "vue-material": "^0.5.2",
     "vue-slide": "^1.1.1",
