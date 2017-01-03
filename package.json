@@ -14,7 +14,6 @@
     "sass-loader": "^4.1.1",
     "vue": "^2.1.0",
     "vue-material": "^0.5.2",
-    "vue-slide": "^1.1.1",
     "vue-spinner": "^1.0.2"
   },
   "devDependencies": {
