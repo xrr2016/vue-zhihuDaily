@@ -1,13 +1,17 @@
 <template>
 <div id="app">
-    <Header></Header>
-    <TopStories></TopStories>
+    <app-header></app-header>
+    <app-topStories></app-topStories>
+    <app-story></app-story>
+    <app-backToTop></app-backToTop>
 </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import TopStories from './components/TopStories.vue'
+import appHeader from './components/Header.vue'
+import appTopStories from './components/TopStories.vue'
+import appStory from './components/Story.vue'
+import appBackToTop from './components/BackToTop.vue'
 export default {
     name: 'app',
     data() {
@@ -17,8 +21,10 @@ export default {
 
     },
     components:{
-      TopStories,
-      Header
+      appTopStories,
+      appHeader,
+      appStory,
+      appBackToTop
     }
 }
 </script>

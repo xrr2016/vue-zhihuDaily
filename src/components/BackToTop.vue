@@ -1,5 +1,7 @@
 <template lang="html">
-
+  <div class="">
+    BackToTop
+  </div>
 </template>
 
 <script>

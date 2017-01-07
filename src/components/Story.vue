@@ -1,5 +1,7 @@
 <template lang="html">
-
+  <div class="">
+    Story
+  </div>
 </template>
 
 <script>
