@@ -9,7 +9,7 @@
             <router-link class="title is-4" to="/">首页</router-link>
           </div>
           <div class="nav-item">
-            <a class="title is-4" >刷新</a>
+            <a class="title is-4" @click='refresh'>刷新</a>
           </div>
         </div>
       </div>
@@ -18,7 +18,11 @@
 
 <script>
 export default {
-
+  methods:{
+    refresh(){
+      console.log('!!!')
+    }
+  }
 }
 </script>
 
