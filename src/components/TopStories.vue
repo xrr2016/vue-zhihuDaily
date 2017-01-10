@@ -8,26 +8,18 @@
 </template>
 
 <script>
-// import API from '../api.js'
+import { getLatest } from '../api.js'
 export default {
-    created() {
-    },
     data() {
         return {
-          topStories : this.$get('/news/latest')
-                           .then(res => {
-                            const topStories = res.data.top_stories
-                            return topStories
-                          })
-                          .catch((err) => {
-                            console.log(err.message)
-                          })
-                }
+          topStories : null
+        }
     },
     computed: {
 
     },
-    methods: {}
+    methods: {
+    }
 }
 </script>
 
