@@ -2,17 +2,17 @@
   <div class="container">
     TopStories
     <ul>
-      <li v-for="story of topStories"> {{ story.title }}</li>
+      <li v-for="story of topStories"> {{ story.id }}:{{story.text}}</li>
     </ul>
   </div>
 </template>
 
 <script>
-import { getLatest } from '../api.js'
+import { mapGetters } from 'vuex'
 export default {
     data() {
         return {
-          topStories : null
+          topStories : $store.getters.getTopStories
         }
     },
     computed: {

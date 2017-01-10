@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import API from '../api'
+import API from '../api/api'
 
 Vue.use(Vuex)
 
-const store = new Vuex.Store({
+export default new Vuex.Store({
   state:{
     topStories:[
       {id:1,text:'aaa'},
@@ -22,5 +22,3 @@ const store = new Vuex.Store({
   mutations:{},
   actions:{}
 })
-
-export default store
