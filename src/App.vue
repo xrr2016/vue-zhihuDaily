@@ -12,9 +12,7 @@ import appHeader from './components/Header.vue'
 import appTopStories from './components/TopStories.vue'
 import appStory from './components/Story.vue'
 import appBackToTop from './components/BackToTop.vue'
-import { getStories } from './api/fetchData'
-const data = getStories()
-console.log(data) 
+import { date,stories,topStories } from './api/fetchData'
 export default {
     created(){
       // this.$store.commit('setDate',this.data.date)
@@ -22,7 +20,7 @@ export default {
     name: 'app',
     data() {
         return {
-          data
+          data :''
         }
     },
     methods: {

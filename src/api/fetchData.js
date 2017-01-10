@@ -15,25 +15,23 @@ const init = {
 
 const request = new Request(latest, init)
 
-function getStories() {
-    let stories = [],
-        topStories = [],
-        date = ''
-    fetch(request)
-        .then(res => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                console.log('Network error')
-            }
-        })
-        .then(json => {
-          return json
-        })
-        .catch(err => console.log(err.message))
-  //  return [date,stories,topStories]
-}
+fetch(request)
+    .then(res => {
+        if (res.ok) {
+            return res.json()
+        } else {
+            console.log('Network error')
+        }
+    })
+    .then((json) => {
+        const date = json.date
+        const stories = json.stories
+        const topStories = json.top_stories
+    })
+    .catch(err => console.log(err.message))
 
-export  {
-    getStories
+export {
+    date,
+    stories,
+    topStories
 }
