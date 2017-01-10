@@ -1,22 +1,35 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { getStories } from '../api/fetchData'
 
 Vue.use(Vuex)
 
-const stories = getStories()
-
 export default new Vuex.Store({
   state:{
-    stories
+    date:'',
+    stories:[],
+    topStories:[]
   },
   getters:{
     getTopStories(state){
       return state.topStories
+    },
+    getStories(state){
+      return state.stories
+    },
+    getDate(state){
+      return state.date
     }
   },
   mutations:{
-
+      setStories(state,data){
+        state.stories = [...data.stories]
+      },
+      setTopStories(state,data){
+        state.topStories = [...data.top_stories]
+      },
+      setDate(state,data){
+        state.stories = data.date
+      }
   },
   actions:{}
 })

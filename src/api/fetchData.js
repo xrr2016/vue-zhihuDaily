@@ -16,7 +16,9 @@ const init = {
 const request = new Request(latest, init)
 
 function getStories() {
-  let stories = {}
+    let stories = [],
+        topStories = [],
+        date = ''
     fetch(request)
         .then(res => {
             if (res.ok) {
@@ -26,11 +28,10 @@ function getStories() {
             }
         })
         .then(json => {
-          Object.assign(stories,json)
+          return json
         })
         .catch(err => console.log(err.message))
-   console.log(stories)
-   return stories
+  //  return [date,stories,topStories]
 }
 
 export  {

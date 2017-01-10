@@ -4,7 +4,6 @@ import axios from 'axios'
 import router from './routes/router'
 import store from './store/index.js'
 
-
 new Vue({
   store,
   router,
