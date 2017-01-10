@@ -34,7 +34,7 @@ export default {
 
     },
     methods: {
-
+        
     },
     components:{
       swiper,
@@ -45,6 +45,6 @@ export default {
 
 <style lang="scss" scoped>
   .swiper{
-    
+
   }
 </style>
