@@ -1,63 +1,15 @@
 <template lang="html">
-<div class="">
-  <nav class="nav">
-  <div class="nav-left">
-    <a class="nav-item">
-      <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
-    </a>
-  </div>
-
-  <div class="nav-center">
-    <a class="nav-item">
-      <span class="icon">
-        <i class="fa fa-github"></i>
-      </span>
-    </a>
-    <a class="nav-item">
-      <span class="icon">
-        <i class="fa fa-twitter"></i>
-      </span>
-    </a>
-  </div>
-
-  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-  <span class="nav-toggle">
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-
-  <!-- This "nav-menu" is hidden on mobile -->
-  <!-- Add the modifier "is-active" to display it on mobile -->
-  <div class="nav-right nav-menu">
-    <a class="nav-item">
-      Home
-    </a>
-    <a class="nav-item">
-      Documentation
-    </a>
-    <a class="nav-item">
-      Blog
-    </a>
-
-    <span class="nav-item">
-      <a class="button" >
-        <span class="icon">
-          <i class="fa fa-twitter"></i>
-        </span>
-        <span>Tweet</span>
-      </a>
-      <a class="button is-primary">
-        <span class="icon">
-          <i class="fa fa-download"></i>
-        </span>
-        <span>Download</span>
-      </a>
-    </span>
-  </div>
-</nav>
-</div>
+    <nav class="nav has-shadow">
+      <div class="container">
+        <div class="nav-left">
+          <router-link class="image is-145x50 logo" to="/">
+              <img src="../assets/top_logo.png"alt="知乎日报">
+          </router-link>
+          <div class="nav-item">
+          </div>
+        </div>
+      </div>
+    </nav>
 </template>
 
 <script>
@@ -67,4 +19,11 @@ export default {
 </script>
 
 <style lang="scss">
+.logo{
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  min-height: 50px;
+  cursor: pointer;
+}
 </style>

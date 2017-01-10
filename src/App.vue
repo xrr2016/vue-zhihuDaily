@@ -2,7 +2,7 @@
 <div id="app">
     <app-header></app-header>
     <app-topStories></app-topStories>
-    <app-story></app-story>
+    <router-view></router-view>
     <app-backToTop></app-backToTop>
 </div>
 </template>
