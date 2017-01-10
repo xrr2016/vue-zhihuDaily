@@ -1,5 +1,6 @@
 <template lang="html">
-  <div class="topStories">
+  <div class="container">
+    TopStories
     <ul>
       <li v-for="story of topStories"> {{ story.title }}</li>
     </ul>
