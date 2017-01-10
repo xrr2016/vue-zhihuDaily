@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import axios from 'axios'
+import '../node_modules/bulma/css/bulma.css'
 
 const JsonBird = 'https://bird.ioliu.cn/v1/?url='
 axios.defaults.baseURL = `${JsonBird}http://news-at.zhihu.com/api/4`

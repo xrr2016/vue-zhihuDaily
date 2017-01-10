@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="topStories">
     <ul>
-      <li v-for="story of this.topStories"> {{ story.title }}</li>
+      <li v-for="story of topStories"> {{ story.title }}</li>
     </ul>
   </div>
 </template>
