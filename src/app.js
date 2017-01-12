@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
-import axios from 'axios'
 import router from './routes/router'
 import store from './store/index.js'
+import Element from 'element-ui'
+import '../node_modules/element-ui/src/index.js'
+Vue.use(Element)
 
 new Vue({
   store,

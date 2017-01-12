@@ -1,28 +1,25 @@
 <template lang="html">
-    <nav class="nav has-shadow">
-      <div class="container">
-        <div class="nav-left">
-          <figure class="image is-145x50 logo">
-            <img src="../assets/top_logo.png"alt="知乎日报">
-          </figure>
-          <div class="nav-item">
-            <router-link class="title is-4" to="/">首页</router-link>
-          </div>
-          <div class="nav-item">
-            <a class="title is-4" @click='refresh'>刷新</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <div class="">
+      <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal">
+        <el-menu-item index="1">处理中心</el-menu-item>
+        <el-submenu index="2">
+          <template slot="title">我的工作台</template>
+          <el-menu-item index="2-1">选项1</el-menu-item>
+          <el-menu-item index="2-2">选项2</el-menu-item>
+          <el-menu-item index="2-3">选项3</el-menu-item>
+        </el-submenu>
+        <el-menu-item index="3"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+      </el-menu>
+    </div>
 </template>
 
 <script>
 export default {
-  methods:{
-    refresh(){
-      console.log('!!!')
+    methods: {
+        refresh() {
+            console.log('!!!')
+        }
     }
-  }
 }
 </script>
 
@@ -33,5 +30,4 @@ export default {
     padding-bottom: 12px;
     min-height: 50px;
 }
-
 </style>
